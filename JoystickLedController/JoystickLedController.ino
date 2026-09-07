@@ -29,30 +29,25 @@ void loop() {
   int X = analogRead(XPin);
   int Y = analogRead(YPin);
 
-  if(X >= neutralX)
-  {
-    ledR = 0;
-    ledG = map(X, neutralX, 1023, 0, 255);
-  }
-  else
-  {
-    ledG = 0;
-    ledR = map(X, neutralX, 0, 0, 255);
-  }
-
-  if(Y >= neutralY)
-  {
-    ledB = 0;
-    ledY = map(Y, neutralY, 1023, 0, 255);
-  }
-  else
-  {
-    ledY = 0;
-    ledB = map(Y, neutralY, 0, 0, 255);
-  }
+  SetLedState(X, neutralX, ledG, ledR);
+  SetLedState(Y, neutralY, ledY, ledB);
 
   analogWrite(LedRed, ledR);
   analogWrite(LedBlue, ledB);
   analogWrite(LedGreen, ledG);
   analogWrite(LedYellow, ledY);
+}
+
+void SetLedState(int coordinate, int neutral, int &led1, int &led2)
+{
+  if(coordinate >= neutral)
+  {
+    led2 = 0;
+    led1 = map(coordinate, neutral, 1023, 0, 255);
+  }
+  else
+  {
+    led1 = 0;
+    led2 = map(coordinate, neutral, 0, 0, 255);
+  }
 }
