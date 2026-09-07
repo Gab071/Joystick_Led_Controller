@@ -6,6 +6,9 @@
 #define YPin A0
 #define SW 2
 
+void SetLedState(int coordinate, int neutral, int &led1, int &led2);
+
+
 // variable is preventing Led's from flickering
 // when joystick is in "resting" position (not moved)
 const int deadZone = 10; 
