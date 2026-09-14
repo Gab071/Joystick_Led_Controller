@@ -40,7 +40,7 @@ The diagram below shows how each position corresponds to the color of an LED (wh
 | Breadboard | 1 | - |
 | Jumper wires | - | - |
 
-## Pin mapping
+## Pin Mapping
 The connections are also shown in the code JoystickLedController.ino. Each number or symbol corresponds to the Arduino pin. In more detail:
 
 | Component | Arduino pin | Comments |
