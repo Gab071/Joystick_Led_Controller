@@ -1,6 +1,6 @@
 # Joystick Led Controller 
 
-## Table of contents
+## Table of Contents
 
 1. [Overview](#overview)
 2. [LED Color Reference](#led-color-reference)
