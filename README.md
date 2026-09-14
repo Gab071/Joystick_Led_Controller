@@ -22,7 +22,7 @@ This is a project that uses Arduino programmed in C++ (via Arduino IDE) language
 
 The diagram below shows how each position corresponds to the color of an LED (white excluded). The center position is (X=510, Y=510) which means the joystick is not moved (is in "resting position").
 
-<img src="LED color ref.png" alt="drawing" width="600"/>
+<img src="images/LED color ref.png" width="600"/>
 
 
 ## Hardware Components
