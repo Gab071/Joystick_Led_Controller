@@ -5,7 +5,7 @@
 1. [Overview](#overview)
 2. [LED Color Reference](#led-color-reference)
 3. [Hardware Components](#hardware-components)
-4. [Pin mapping](#pin-mapping)
+4. [Pin Mapping](#pin-mapping)
 5. [How to Run](#how-to-run)
 
 ## Overview
