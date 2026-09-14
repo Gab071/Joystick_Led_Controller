@@ -1,8 +1,8 @@
-#define LedRed 11
-#define LedBlue 10
-#define LedYellow 9
-#define LedWhite 7
-#define LedGreen 6
+#define LedLeft 11
+#define LedUpper 10
+#define LedLower 9
+#define LedSw 7
+#define ledLeftight 6
 #define XPin A1
 #define YPin A0
 #define SW 2
@@ -18,11 +18,11 @@ void setup()
   Serial.begin(9600); // for debugging purposes
   pinMode(SW, INPUT_PULLUP); // switch connected just in case
 
-  pinMode(LedRed, OUTPUT);
-  pinMode(LedBlue, OUTPUT);
-  pinMode(LedYellow, OUTPUT);
-  pinMode(LedGreen, OUTPUT);
-  pinMode(LedWhite, OUTPUT);
+  pinMode(LedLeft, OUTPUT);
+  pinMode(ledUplue, OUTPUT);
+  pinMode(LedLower, OUTPUT);
+  pinMode(ledLeftight, OUTPUT);
+  pinMode(LedSw, OUTPUT);
 }
 
 void loop() 
@@ -36,20 +36,20 @@ void loop()
   int Switch = digitalRead(SW);
 
   // Variables that store LED's state 
-  static int ledR = 0;
-  static int ledB = 0;
-  static int ledY = 0;
-  static int ledG = 0;
+  static int ledLeft = 0;
+  static int ledUp = 0;
+  static int ledLow = 0;
+  static int ledRight = 0;
 
-  SetLedState(X, neutralX, ledG, ledR);
-  SetLedState(Y, neutralY, ledY, ledB);
+  SetLedState(X, neutralX, ledRight, ledLeft);
+  SetLedState(Y, neutralY, ledLow, ledUp);
 
-  (Switch == LOW) ? digitalWrite(LedWhite, HIGH) : digitalWrite(LedWhite, LOW);
+  (Switch == LOW) ? digitalWrite(LedSw, HIGH) : digitalWrite(LedSw, LOW);
 
-  analogWrite(LedRed, ledR);
-  analogWrite(LedBlue, ledB);
-  analogWrite(LedGreen, ledG);
-  analogWrite(LedYellow, ledY);
+  analogWrite(LedLeft, ledLeft);
+  analogWrite(ledUplue, ledUp);
+  analogWrite(ledLeftight, ledRight);
+  analogWrite(LedLower, ledLow);
 }
 
 // Function assigns for the LED's corresponding states depending on joystick position
