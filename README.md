@@ -12,7 +12,7 @@
 
 This is a project that uses Arduino programmed in C++ (via Arduino IDE) language to allow a Joystick module to control LEDs. In more detail:
 
-- There is a dead zone (joystick's "resting position") when all LEDs are turned off. 
+- There is a dead zone (when joystick is in its "resting position") when all LEDs are turned off. 
 - The closer we move joystick module to corresponding LED's position, the brighter it becomes. 
 - Brightness of the diodes is controlled thanks to the PWM modulation (if we have only two states: high and low, we can "fake" voltage in between those two states thanks to the PWM modulation and get different brightness for the LED).
 - If we press joystick module (press the switch) it turns on white LED (switch LED). 
