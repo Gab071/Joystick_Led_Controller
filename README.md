@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [LED Color Reference](#led-color-reference)
-3. [Hardware Components](#hardware-components)
-4. [Pin Mapping](#pin-mapping)
-5. [How to Run](#how-to-run)
+1. [Overview](#1-overview)
+2. [LED Color Reference](#2-led-color-reference)
+3. [Hardware Components](#3-hardware-components)
+4. [Pin Mapping](#4-pin-mapping)
+5. [How to Run](#5-how-to-run)
 
 ## 1. Overview
 
