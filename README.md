@@ -8,7 +8,7 @@
 4. [Pin Mapping](#pin-mapping)
 5. [How to Run](#how-to-run)
 
-## Overview
+## 1. Overview
 
 This is a project that uses Arduino programmed in C++ (via Arduino IDE) language to allow a Joystick module to control LEDs. In more detail:
 
@@ -18,14 +18,14 @@ This is a project that uses Arduino programmed in C++ (via Arduino IDE) language
 - If we press joystick module (press the switch) it turns on white LED (switch LED). 
 
 
-## LED Color Reference 
+## 2. LED Color Reference 
 
 The diagram below shows how each position corresponds to the color of an LED (white excluded). The center position is (X=510, Y=510) which means the joystick is not moved (is in "resting position").
 
 <img src="images/LED color ref.png" width="600"/>
 
 
-## Hardware Components
+## 3. Hardware Components
 
 | Component | Quantity | Comments |
 | ---- | ----- | ----- |
@@ -40,7 +40,7 @@ The diagram below shows how each position corresponds to the color of an LED (wh
 | Breadboard | 1 | - |
 | Jumper wires | - | - |
 
-## Pin Mapping
+## 4. Pin Mapping
 The connections are also shown in the code JoystickLedController.ino. Each number or symbol corresponds to the Arduino pin. In more detail:
 
 | Component | Arduino pin | Comments |
@@ -69,7 +69,7 @@ The connections are also shown in the code JoystickLedController.ino. Each numbe
 #define SW 2
 ```
 
-## How to Run
+##  5. How to Run
 
 ### Step 1
 
